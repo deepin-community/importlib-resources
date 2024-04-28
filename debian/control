@@ -1,15 +1,39 @@
-Source: template-repository
-Section: unknown
+Source: importlib-resources
+Section: python
+Testsuite: autopkgtest-pkg-python
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Maintainer: Debian Python Team <team+python@tracker.debian.org>
+Uploaders: Jonas Meurer <jonas@freesources.org>
+Build-Depends: debhelper-compat (= 13),
+               dh-sequence-python3,
+               python3-all,
+               python3-pytest,
+               python3-setuptools,
+               python3-setuptools-scm,
+               pybuild-plugin-pyproject,
+               python3-zipp
+Standards-Version: 4.6.2
+Rules-Requires-Root: no
+Homepage: https://github.com/python/importlib_resources
+Vcs-Browser: https://salsa.debian.org/python-team/packages/importlib-resources
+Vcs-Git: https://salsa.debian.org/python-team/packages/importlib-resources.git
 
-Package: template-repository
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Package: python3-importlib-resources
+Architecture: all
+Depends: python3-zipp,
+         ${misc:Depends},
+         ${python3:Depends}
+Description: Read resources from Python packages
+ importlib_resources is a backport of Python standard library
+ importlib.resources module for older Pythons. Users of Python 3.9 and
+ beyond should use the standard library module, since for these versions,
+ importlib_resources just delegates to that module.
+ .
+ The key goal of this module is to replace parts of pkg_resources with a
+ solution in Python's stdlib that relies on well-defined APIs. This makes
+ reading resources included in packages easier, with more stable and
+ consistent semantics.
+ .
+ This library provides two very simple decorators that document the
+ publicness of the names in your module. They keep your module's __all__
+ in sync so you don't have to.

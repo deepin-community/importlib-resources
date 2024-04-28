@@ -1,5 +1,54 @@
-template-repository (1.0-1) unstable; urgency=medium
+importlib-resources (6.0.1-1) unstable; urgency=medium
 
-  * Initial release
+  * Team upload.
+  * New upstream version
+  * Standards-Version: 4.6.2 (routine-update)
+  * Testsuite: autopkgtest-pkg-python (routine-update)
+  * Build-Depends: s/dh-python/dh-sequence-python3/ (routine-update)
+  * Add salsa-ci file (routine-update)
+  * Update lintian override info format in
+    d/python3-importlib-resources.lintian-overrides on line 2-3, 5-6.
+  * Set upstream metadata fields: Security-Contact.
+  * d/control: add build-dep on pybuild-plugin-pyproject for pyproject.toml
+  * d/tests/control: add autopkgtest using pytest
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Michael R. Crusoe <crusoe@debian.org>  Tue, 08 Aug 2023 20:16:50 +0200
+
+importlib-resources (5.1.2-2) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since buster (oldstable):
+    + Build-Depends: Drop versioned constraint on python3-all.
+  * Update standards version to 4.6.1, no changes needed.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Mon, 17 Oct 2022 00:42:28 +0100
+
+importlib-resources (5.1.2-1) unstable; urgency=medium
+
+  [ Jonas Meurer ]
+  * New upstream release 5.1.2
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+ -- Jonas Meurer <jonas@freesources.org>  Mon, 08 Mar 2021 12:39:49 +0100
+
+importlib-resources (5.1.0-1) unstable; urgency=medium
+
+  * New upstream release 5.1.0
+  * d/watch: Fix syntax
+
+ -- Jonas Meurer <jonas@freesources.org>  Sat, 23 Jan 2021 20:48:49 +0100
+
+importlib-resources (4.1.1-2) unstable; urgency=medium
+
+  * Source-only re-upload to get the package into testing.
+
+ -- Jonas Meurer <jonas@freesources.org>  Wed, 13 Jan 2021 21:10:33 +0100
+
+importlib-resources (4.1.1-1) unstable; urgency=medium
+
+  * Initial release.
+
+ -- Jonas Meurer <jonas@freesources.org>  Tue, 29 Dec 2020 14:04:24 +0100

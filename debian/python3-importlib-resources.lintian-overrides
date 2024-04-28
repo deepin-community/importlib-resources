@@ -1,0 +1,6 @@
+# Ignore documentation in testfiles
+python3-importlib-resources: package-contains-documentation-outside-usr-share-doc [usr/lib/python3/dist-packages/importlib_resources/tests/data02/one/resource1.txt]
+python3-importlib-resources: package-contains-documentation-outside-usr-share-doc [usr/lib/python3/dist-packages/importlib_resources/tests/data02/two/resource2.txt]
+# Ignore national encodings in testfiles
+python3-importlib-resources: national-encoding [usr/lib/python3/dist-packages/importlib_resources/tests/data01/utf-16.file]
+python3-importlib-resources: national-encoding [usr/lib/python3/dist-packages/importlib_resources/tests/namespacedata01/utf-16.file]
