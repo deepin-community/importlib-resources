@@ -1,0 +1,6 @@
+---
+Bug-Database: https://github.com/python/importlib_resources/issues
+Bug-Submit: https://github.com/python/importlib_resources/issues/new
+Repository: https://github.com/python/importlib_resources.git
+Repository-Browse: https://github.com/python/importlib_resources
+Security-Contact: https://github.com/python/importlib_resources/tree/HEAD/SECURITY.md
